@@ -10,14 +10,72 @@
 
 ---
 
-## Node.js 版本
+## LV.1
+
+```markdown
+LV1：任選 2 頁含 RWD
+```
+
+- [x] p1-門市據點資訊頁
+- [x] p2-常見問題頁
+
+### SCSS
+
+```markdown
++---base
+|       _base.scss       <!-- container, gap, font -->
+|       _reset.scss
+|       _variables.scss
+|       
++---layout
+|       _footer.scss
+|       _header.scss
+|       
++---pages
+|       _faq.scss
+|       _index.scss
+|       _store.scss
+|       
+\---utils
+        _helpers.scss  <!-- display, flex, z-index -->
+        _mixins.scss   <!-- pad, phone -->
+```
+
+### p1-門市據點資訊頁
+
+- 下拉選單移除原生按鈕
+
+```CSS
+  /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+```
+
+- 選單移除外框
+
+```CSS
+  outline: none;
+```
+
+- 地圖匯入的 `iframe` 內建尺寸設定改為適應外層容器
+
+### p2-常見問題頁
+
+- 按照設計稿增加內推 `px-55`
+
+---
+
+## 原版指令說明
+
+### Node.js 版本
 
 - 專案的 Node.js 版本需為 v16 以上
 - 查看自己版本指令：`node -v`
 
 ---
 
-## 指令列表
+### 指令列表
 
 - `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
 - `npm run dev` - 執行開發模式
@@ -28,7 +86,7 @@
 
 ---
 
-## 資料夾結構
+### 資料夾結構
 
 - assets # 靜態資源放置處
   - images # 圖片放置處
@@ -38,21 +96,21 @@
 
 - JavaScript 程式碼可寫在 main.js 檔案
 
-### 注意事項
+#### 注意事項
 
 - 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
 
 - .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
 
-## 開發模式的監聽
+### 開發模式的監聽
 
 vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
 
 ---
 
-## 部署 gh-pages 流程說明
+### 部署 gh-pages 流程說明
 
-### Windows 版本
+#### Windows 版本
 
 1. 在 GitHub 建立一個新的 Repository
 
