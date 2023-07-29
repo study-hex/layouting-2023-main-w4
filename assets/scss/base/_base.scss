@@ -8,8 +8,8 @@ body {
 /* 
 #NOTES:
 - 1296 + 24 = 1320px
-  - (696 + gutter = 720px
-  - (348 + gutter = 372px
+  - (696 + gutter = 720px)
+  - (348 + gutter = 372px)
 */
 
 .container {
@@ -94,6 +94,11 @@ body {
 .px-6 {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.px-55 {
+  padding-left: 220px;
+  padding-right: 220px;
 }
 
 .pl-4 {
@@ -183,6 +188,11 @@ body {
 .font-2xs {
   font-size: $--txt-2xs;
 }
+
+.font-bold {
+  font-weight: bold;
+}
+
 
 .border-card {
   border: $--border-card;
