@@ -1,4 +1,3 @@
-
 /* .store-info-img {
   width: 526px;
   height: 224px;
@@ -33,7 +32,8 @@
     -moz-appearance: none;
     appearance: none;
 
-    &:focus, &:hover {
+    &:focus,
+    &:hover {
       outline: none;
       border-color: $--color-primary;
       box-shadow: inset 0 1px 1px $--color-secondary, 0 0 4px $--color-primary;
@@ -68,7 +68,8 @@
   }
 }
 
-.store-info>figure, .store-info-card {
+.store-info>figure,
+.store-info-card {
   @media (max-width:768px) {
     width: 48%;
   }
@@ -83,16 +84,7 @@
 }
 
 .main {
-
-  /* height: calc(100vh - 80px); */
   @media (max-width:375px) {
-    padding-top: 216px;
-
-    >h2 {
-      margin-bottom: 24px;
-      font-size: $--txt-base;
-    }
-
     & .store {
       margin-bottom: 24px;
     }

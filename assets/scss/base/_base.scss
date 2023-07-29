@@ -227,3 +227,23 @@ body {
 }
 
 /* end of base */
+
+.main {
+  /* height: calc(100vh - 80px); */
+
+  @media (max-width:768px) {
+    padding-top: 160px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @media (max-width:375px) {
+    padding-top: 216px;
+
+    & h2 {
+      margin-bottom: 24px;
+      font-size: $--txt-base;
+    }
+  }
+}
