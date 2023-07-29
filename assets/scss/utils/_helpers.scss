@@ -1,0 +1,59 @@
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.display-none {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+/* end of utility-helpers */
