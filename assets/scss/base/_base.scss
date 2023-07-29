@@ -17,11 +17,11 @@ body {
   margin: 0 auto;
   padding: 0 12px;
 
-  @media (max-width: 768px) {
+  @include pad {
     max-width: 720px;
   }
 
-  @media (max-width: 375px) {
+  @include phone {
     max-width: 372px;
   }
 }
@@ -231,14 +231,14 @@ body {
 .main {
   /* height: calc(100vh - 80px); */
 
-  @media (max-width:768px) {
+  @include pad {
     padding-top: 160px;
 
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  @media (max-width:375px) {
+  @include phone {
     padding-top: 216px;
 
     & h2 {

@@ -11,7 +11,7 @@
 
   background: url(/images/arrow_drop_down.svg) 100% / 8% no-repeat;
 
-  @media (max-width:375px) {
+  @include phone {
     width: 73%;
     background-position: 67%;
     /* background-size: 24px; */
@@ -39,7 +39,7 @@
       box-shadow: inset 0 1px 1px $--color-secondary, 0 0 4px $--color-primary;
     }
 
-    @media (max-width:375px) {
+    @include phone {
       width: 73%;
     }
   }
@@ -49,13 +49,13 @@
   width: 57%;
   height: 414px;
 
-  @media (max-width:768px) {
+  @include pad {
     width: 100%;
   }
 }
 
 .store-info {
-  @media (max-width:768px) {
+  @include pad {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,18 +63,18 @@
     gap: 24px;
   }
 
-  @media (max-width:375px) {
+  @include phone {
     flex-direction: column;
   }
 }
 
 .store-info>figure,
 .store-info-card {
-  @media (max-width:768px) {
+  @include pad {
     width: 48%;
   }
 
-  @media (max-width:375px) {
+  @include phone {
     width: 100%;
   }
 }
@@ -84,7 +84,7 @@
 }
 
 .main {
-  @media (max-width:375px) {
+  @include phone {
     & .store {
       margin-bottom: 24px;
     }

@@ -13,7 +13,7 @@
   white-space: nowrap;
   overflow: hidden;
 
-  @media (max-width:375px) {
+  @include phone {
     margin-left: 15px;
   }
 }
@@ -22,7 +22,7 @@
 .nav {
   height: 80px;
 
-  @media (max-width:375px) {
+  @include phone {
     height: auto;
 
     >.container {
@@ -32,11 +32,11 @@
 }
 
 .nav-list {
-  @media (max-width:768px) {
+  @include pad {
     gap: 48px;
   }
 
-  @media (max-width:375px) {
+  @include phone {
     width: 100%;
     gap: 0px;
 
@@ -47,7 +47,7 @@
 }
 
 .nav-list-item {
-  @media (max-width:375px) {
+  @include phone {
     width: 49.9%;
 
     border-bottom: 1px solid $--color-white;
