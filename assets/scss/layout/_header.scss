@@ -1,0 +1,32 @@
+.hero {
+  height: calc(100vh - #{$--nav-height});
+  top: $--nav-height;
+
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include pad {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
+  }
+
+  @include phone { 
+    height: calc(100vh - #{$phone-nav-height});
+    top: $phone-nav-height;
+  }
+
+  >.container {
+    padding-top: 16%;
+
+    @include pad {
+      padding-top: 48%;
+    }
+  }
+
+  &-link {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}

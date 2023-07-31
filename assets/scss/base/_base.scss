@@ -110,6 +110,10 @@ body {
   margin-bottom: 24px;
 }
 
+.mb-1 {
+  margin-bottom: 4px;
+}
+
 .mb-2 {
   margin-bottom: 8px;
 }
@@ -163,6 +167,16 @@ body {
   gap: 64px;
 }
 
+// QQ
+// .bg-cover {
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.text-primary {
+  color: $--color-primary;
+}
 
 .theme-primary {
   color: $--color-white;
@@ -171,6 +185,10 @@ body {
 
 .font-noto {
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+.font-2xl {
+  font-size: $--txt-2xl;
 }
 
 .font-xl {
@@ -208,6 +226,13 @@ body {
 
 .border-left-primary {
   border-left: 8px solid $--color-primary;
+}
+
+
+.btn {
+  &:hover {
+    outline: 2px solid $--color-secondary;
+  }
 }
 
 
@@ -249,5 +274,35 @@ body {
       margin-bottom: 24px;
       font-size: $--txt-base;
     }
+  }
+}
+
+@include phone {
+  .phone-font-2xl {
+    font-size: $--txt-2xl;
+  }
+
+  .phone-font-xl {
+    font-size: $--txt-xl;
+  }
+
+  .phone-font-lg {
+    font-size: $--txt-lg;
+  }
+
+  .phone-font-base {
+    font-size: $--txt-base;
+  }
+
+  .phone-font-sm {
+    font-size: $--txt-sm;
+  }
+
+  .phone-font-xs {
+    font-size: $--txt-xs;
+  }
+
+  .phone-font-2xs {
+    font-size: $--txt-2xs;
   }
 }

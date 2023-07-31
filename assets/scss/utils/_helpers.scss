@@ -1,15 +1,24 @@
-
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
   width: 100%;
 }
 
+
+.relative {
+  position: relative;
+}
+
 .fixed {
   position: fixed;
 }
+
 
 .display-none {
   display: none;
@@ -45,6 +54,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 

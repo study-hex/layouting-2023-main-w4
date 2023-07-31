@@ -10,8 +10,10 @@ $--color-lightGray: #CED4DA;
 $--border-card: 1px solid #00000020;
 
 $--nav-height: 80px;
+$phone-nav-height: $--nav-height + 48px + 48px;
 
 // font
+$--txt-2xl: 64px;
 $--txt-xl: 48px;
 $--txt-lg: 36px;
 $--txt-base: 24px;

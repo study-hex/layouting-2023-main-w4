@@ -8,15 +8,28 @@
 </head>
 
 <body>
-  <%- include('./layout/navbar'); -%>
+  <header class="header h-screen">
+    <%- include('./layout/navbar'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+      <section class="hero relative bg-cover text-right text-primary font-noto">
+        <div class="container">
+          <p class="font-lg phone-font-2xs">Promise-Desert 2020 早春系列</p>
 
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+          <h2 class="mb-1 font-bold font-2xl phone-font-base">看得清，才能看得遠</h2>
 
-    <%- include('./layout/footer'); -%>
+          <a href="#"
+            class="btn hero-link inline-block px-3 theme-primary font-sm phone-font-sm">
+            立即購買
+          </a>
+        </div>
+      </section>
+  </header>
 
-      <script type="module" src="../main.js"></script>
+
+
+  <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
 </body>
 
 </html>
