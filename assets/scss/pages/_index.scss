@@ -12,3 +12,21 @@
     }
   }
 }
+
+.series-list {
+  @include pad {
+    flex-direction: column;
+  }
+
+  & img {
+    @include pad {
+      width: 336px;
+      height: 336px;
+    }
+
+    @include phone {
+      width: 348px;
+      height: 348px;
+    }
+  }
+}
