@@ -39,11 +39,14 @@
   }
 }
 
-
-@include phone {
+// QQ
+@include pad {
   .rwd-none {
     display: none;
   }
+}
+
+@include phone {
 
   .nav>.container,
   .nav-list {
