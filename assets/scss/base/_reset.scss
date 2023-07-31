@@ -4,6 +4,10 @@
   License: none (public domain)
 */
 
+* {
+  outline: 1px solid #f73;
+}
+
 *,
 *::before,
 *::after {
@@ -104,6 +108,7 @@ a:hover {
 .material-symbols-outlined {
   font-size: inherit;
   color: inherit;
+  vertical-align: middle;
 }
 
 /* end of custom-reset */
