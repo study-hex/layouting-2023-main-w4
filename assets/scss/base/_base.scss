@@ -188,13 +188,21 @@ body {
   color: $--color-primary;
 }
 
+.text-dark {
+  color: $--color-dark;
+}
+
+.text-black {
+  color: $--color-black;
+}
+
 .theme-primary {
   color: $--color-white;
   background: $--color-primary;
 }
 
 .theme-secondary {
-  color: $--color-primary;
+  color: $--color-dark;
   background: $--color-secondary;
 }
 
