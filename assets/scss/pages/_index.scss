@@ -1,3 +1,14 @@
-.index-title {
-  font-size: 100px;
+.info {
+  @include phone {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &-list-item {
+    width: calc(306 / 1296 * 100%);
+
+    @include pad {
+      width: 100%;
+    }
+  }
 }
