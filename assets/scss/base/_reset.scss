@@ -105,6 +105,10 @@ a:hover {
   opacity: 0.8;
 }
 
+input[type="button"], button {
+  border: none;
+}
+
 .material-symbols-outlined {
   font-size: inherit;
   color: inherit;

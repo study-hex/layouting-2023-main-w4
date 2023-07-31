@@ -244,7 +244,58 @@
       </ul>
     </section>
 
-    <section class="contact"></section>
+    <section class="contact bg-secondary py-20">
+      <div class="container">
+        <h2
+          class="mb-12 text-center text-dark font-bold font-xl phone-font-base">
+          顧客推薦</h2>
+
+        <form action="#" class="contact-form mb-4 font-sm">
+          <p class="mb-6">
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+
+          <div class="mb-4">
+            <label for="user-name" class="block mb-2">姓名</label>
+            <input type="text" name="user-name" id="user-name"
+              class="w-full pl-3" placeholder="陳小明" required>
+          </div>
+
+          <div class="mb-4">
+            <label for="mobile" class="block mb-2">聯絡電話</label>
+            <input type="tel" name="mobile" id="mobile" class="w-full pl-3"
+              placeholder="0912-345-678">
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="block mb-2">電子郵件</label>
+            <input type="email" name="email" id="email" class="w-full pl-3"
+              placeholder="example@email.com" required>
+          </div>
+
+          <div class="mb-4">
+            <label for="story" class="block mb-2">意見反應</label>
+
+            <textarea id="story" name="story" rows="5" cols="33"
+              class="w-full pl-3" placeholder="請輸入您的意見">
+            </textarea>
+          </div>
+
+          <div class="mb-12">
+            <input type="checkbox" name="checkbox" id="checkbox"
+              class="mr-1 cursor-pointer" required>
+
+            <label for="checkbox"
+              class="cursor-pointer">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          </div>
+
+          <!-- QQ -->
+          <button type="button"
+            class="btn block mx-auto py-4 px-44 theme-primary cursor-pointer">
+            確認送出
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <%- include('./layout/footer'); -%>
