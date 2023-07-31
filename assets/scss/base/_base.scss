@@ -201,6 +201,14 @@ body {
   color: $--color-black;
 }
 
+.text-white {
+  color: $--color-white;
+}
+
+.bg-white {
+  background: $--color-white;
+}
+
 .theme-primary {
   color: $--color-white;
   background: $--color-primary;

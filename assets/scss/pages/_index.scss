@@ -30,3 +30,47 @@
     }
   }
 }
+
+.design {
+  background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include pad {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png);
+  }
+
+  @include phone {
+    background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png);
+  }
+
+  &-list {
+    @include pad {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    & img {
+      width: 648px;
+      height: 240px;
+
+      @include pad {
+        width: 696px;
+      }
+
+      @include phone {
+        width: 348px;
+      }
+    }
+
+    &-item:first-child figcaption {
+      border-right: 1px solid $--color-lightGray;
+
+      @include pad {
+        border: none;
+      }
+    }
+  }
+}
