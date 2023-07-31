@@ -10,6 +10,9 @@
   width: 100%;
 }
 
+.w-fit {
+  width: fit-content;
+}
 
 .relative {
   position: relative;
@@ -60,6 +63,9 @@
   text-align: right;
 }
 
+.rounded {
+  border-radius: 4px;
+}
 
 .cursor-pointer {
   cursor: pointer;

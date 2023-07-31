@@ -74,3 +74,45 @@
     }
   }
 }
+
+.review-list {
+  @include pad {
+    flex-direction: column;
+  }
+
+  & img {
+    // width: 306px;
+    // height: 306px;
+    // height: calc(306 / 1296 * 100%);
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  &-item {
+    width: calc(306 / 1296 * 100%);
+
+    @include pad {
+      // QQ
+      width: calc(336 / 696 * 100%);
+    }
+
+    @include phone {
+      width: 100%;
+    }
+
+    &-txt {
+      // QQ
+      min-height: 205px;
+      border: 1px solid #DEE2E6;
+      border-radius: 0px 0px 4px 4px;
+      box-shadow: 0px 2px 6px #00000029;
+    }
+
+    &-txt span {
+      color: #707070;
+    }
+
+    &:hover {
+      box-shadow: 0px 2px 12px #00000029;
+    }
+  }
+}
