@@ -5,7 +5,8 @@
   }
 
   &-list-item {
-    width: calc(306 / 1296 * 100%);
+    width: 23%;
+    // width: calc(306 / 1296 * 100%);
 
     @include pad {
       width: 100%;
@@ -118,23 +119,36 @@
 }
 
 .contact-form {
-  padding-left: 330px;
-  padding-right: 330px;
+  width: calc(636 / 1296 * 100%);
 
   @include pad {
-    padding-left: 60px;
-    padding-right: 60px;
+    width: calc(576 / 696 * 100%);
 
+    // QQ
     & h2,
     & div:last-child {
       margin-bottom: 24px;
     }
+
+    @include phone {
+      width: 100%;
+    }
   }
 
-  @include phone {
-    padding-left: 0;
-    padding-right: 0;
+  &-btn {
+    @include pad {
+      padding-left: 134px;
+      padding-right: 134px;
+    }
+
+    @include phone {
+      // QQ
+      padding-left: 0px;
+      padding-right: 0px;
+      width: 100%;
+    }
   }
+
 
   & input {
     padding-top: 6px;
