@@ -14,6 +14,8 @@
   }
 }
 
+// end of info
+
 .series-list {
   @include pad {
     flex-direction: column;
@@ -31,6 +33,8 @@
     }
   }
 }
+
+// end of series
 
 .design {
   background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
@@ -70,6 +74,7 @@
     }
   }
 }
+
 // end of design
 
 .review-list {

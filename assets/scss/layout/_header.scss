@@ -8,16 +8,20 @@
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
   }
 
-  @include phone { 
+  @include phone {
     height: calc(100vh - #{$phone-nav-height});
     top: $phone-nav-height;
   }
 
   >.container {
-    padding-top: 16%;
+    padding-top: 24%;
 
     @include pad {
-      padding-top: 48%;
+      padding-top: 20%;
+    }
+
+    @include phone {
+      padding-top: 36%;
     }
   }
 
