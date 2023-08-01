@@ -77,10 +77,6 @@
 }
 
 .review-list {
-  @include pad {
-    flex-direction: column;
-  }
-
   & img {
     // width: 306px;
     // height: 306px;
@@ -89,7 +85,8 @@
   }
 
   &-item {
-    width: calc(306 / 1296 * 100%);
+    // width: calc(306 / 1296 * 100%);
+    width: 23%;
 
     @include pad {
       // QQ
@@ -117,6 +114,8 @@
     }
   }
 }
+
+// end of review
 
 .contact-form {
   width: calc(636 / 1296 * 100%);
@@ -155,6 +154,8 @@
     padding-bottom: 6px;
   }
 }
+
+// end of contact
 
 // @include phone {
 //   section {
