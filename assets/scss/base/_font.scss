@@ -1,0 +1,67 @@
+.font-noto {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-2xl {
+  font-size: $--txt-2xl;
+}
+
+.font-xl {
+  font-size: $--txt-xl;
+}
+
+.font-lg {
+  font-size: $--txt-lg;
+}
+
+.font-sm {
+  font-size: $--txt-sm;
+}
+
+.font-xs {
+  font-size: $--txt-xs;
+}
+
+.font-2xs {
+  font-size: $--txt-2xs;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+
+
+@include phone {
+  .phone-font-2xl {
+    font-size: $--txt-2xl;
+  }
+
+  .phone-font-xl {
+    font-size: $--txt-xl;
+  }
+
+  .phone-font-lg {
+    font-size: $--txt-lg;
+  }
+
+  .phone-font-base {
+    font-size: $--txt-base;
+  }
+
+  .phone-font-sm {
+    font-size: $--txt-sm;
+  }
+
+  .phone-font-xs {
+    font-size: $--txt-xs;
+  }
+
+  .phone-font-2xs {
+    font-size: $--txt-2xs;
+  }
+}

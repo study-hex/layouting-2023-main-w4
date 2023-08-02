@@ -1,0 +1,46 @@
+.text-primary {
+  color: $--color-primary;
+}
+
+.text-dark {
+  color: $--color-dark;
+}
+
+.text-black {
+  color: $--color-black;
+}
+
+.text-white {
+  color: $--color-white;
+}
+
+.bg-white {
+  background: $--color-white;
+}
+
+.bg-secondary {
+  background: $--color-secondary;
+}
+
+.theme-primary {
+  color: $--color-white;
+  background: $--color-primary;
+}
+
+.theme-secondary {
+  color: $--color-dark;
+  background: $--color-secondary;
+}
+
+
+.border-card {
+  border: $--border-card;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $--color-white;
+}
+
+.border-left-primary {
+  border-left: 8px solid $--color-primary;
+}
