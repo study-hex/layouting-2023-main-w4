@@ -10,7 +10,7 @@
   width: 23vw;
 
   /* Add custom arrow */
-  background: url(/images/arrow_drop_down.svg) 100% / 8% no-repeat;
+  background: url(/assets/images/arrow_drop_down.svg) 100% / 8% no-repeat;
 
   @include phone {
     width: 73%;
@@ -32,13 +32,6 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
-    &:focus,
-    &:hover {
-      outline: none;
-      border-color: $--color-primary;
-      box-shadow: inset 0 1px 1px $--color-secondary, 0 0 4px $--color-primary;
-    }
 
     @include phone {
       width: 73%;
