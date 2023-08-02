@@ -158,6 +158,76 @@
 
 // end of contact
 
+/* Step1: The container */
+.custom-check {
+  position: relative;
+  display: block;
+
+  user-select: none;
+
+  /* Step2: Hide the browser's default checkbox */
+  & input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+  }
+
+  /* Step3: Create a custom checkbox */
+  & .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+
+    border: 1px solid $--color-darkGray;
+    background-color: transparent;
+
+    /* Step4: Create the checkmark/indicator (hidden when not checked) */
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  /* Step5: On mouse-over, add a grey background color */
+  &:hover input~.checkmark {
+    border: none;
+    outline: none;
+    background-color: $--color-lightGray;
+  }
+
+  /* Step6: When the checkbox is checked, add a background */
+  & input:checked~.checkmark {
+    border: none;
+    outline: none;
+    background-color: $--color-primary;
+
+    /* Step7: Show the checkmark when checked */
+    &:after {
+      display: block;
+    }
+  }
+
+  /* Step8: Style the checkmark/indicator */
+  & .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+// end of custom-check
+
+
 // @include phone {
 //   section {
 //     padding-top: 40px;
