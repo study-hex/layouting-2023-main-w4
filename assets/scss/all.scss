@@ -3,11 +3,13 @@
 @import './base/reset-custom';
 
 @import './utils/mixins';
+
 @import './themes/theme';
 @import './base/font';
 @import './base/base';
 
 @import './utils/helpers';
+@import './utils/functions';
 
 @import './components/scrollbar';
 @import './components/button';
