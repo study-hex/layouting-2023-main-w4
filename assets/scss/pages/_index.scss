@@ -1,14 +1,18 @@
 .info {
-  @include phone {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+  // @include phone {
+  //   padding-top: 40px;
+  //   padding-bottom: 40px;
+  // }
 
   &-list-item {
     width: 23%;
     // width: calc(306 / 1296 * 100%);
 
     @include pad {
+      width: 46%;
+    }
+
+    @include phone {
       width: 100%;
     }
   }
@@ -17,9 +21,9 @@
 // end of info
 
 .series-list {
-  @include pad {
-    flex-direction: column;
-  }
+  // @include pad {
+  //   flex-direction: column;
+  // }
 
   & img {
     @include pad {
@@ -48,10 +52,10 @@
   }
 
   &-list {
-    @include pad {
-      flex-direction: column;
-      gap: 24px;
-    }
+    // @include pad {
+    //   flex-direction: column;
+    //   gap: 24px;
+    // }
 
     & img {
       width: 648px;
@@ -228,9 +232,10 @@
 // end of custom-check
 
 
-// @include phone {
-//   section {
-//     padding-top: 40px;
-//     padding-bottom: 40px;
-//   }
-// }
+@include phone {
+  section:is(.info, .series, .design, .review, .contact) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    // color: #f06d06;
+  }
+}
