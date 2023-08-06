@@ -1,3 +1,14 @@
+* {
+  // outline: 1px solid #f73;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 html,
 body {
   font-family: 'Roboto', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
@@ -5,66 +16,72 @@ body {
   line-height: 1.5;
 }
 
-/* 
-#NOTES:
-- 1296 + 24 = 1320px
-  - (696 + gutter = 720px)
-  - (348 + gutter = 372px)
-*/
 
-.container {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 12px;
+a {
+  /* for underline */
+  position: relative;
 
-  @include pad {
-    max-width: 720px;
-  }
-
-  @include phone {
-    max-width: 372px;
-  }
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
 }
 
-
-.hover-effect-secondary {
-  &:before {
-    left: 0;
-    bottom: 8px;
-    width: 100%;
-    /* underline's height */
-    height: 3px;
-
-    background: $--color-secondary;
-    /* hidden */
-    transform: scaleX(0);
-  }
-
-  &:hover:before {
-    /* show */
-    transform: scaleX(1);
-  }
+a::before,
+a::after {
+  /* pseudo-element */
+  content: '';
+  position: absolute;
 }
 
-/* end of base */
-
-
-.main {
-  /* height: calc(100vh - 80px); */
-
-  @include pad {
-    padding-top: 160px;
-
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  @include phone {
-    padding-top: 216px;
-
-    & h2 {
-      margin-bottom: 24px;
-      font-size: $--txt-base;
-    }
-  }
+a,
+a::before,
+a::after,
+img {
+  transition: transform 0.5s linear;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+img:hover,
+a:hover {
+  opacity: 0.8;
+}
+
+input[type="button"],
+button {
+  border: none;
+}
+
+/* Selects any valid <input> */
+input:valid {
+  outline: 1px solid darkgreen;
+  border-color: darkgreen;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+  border-color: $--color-primary;
+  box-shadow: inset 0 1px 1px $--color-secondary, 0 0 4px $--color-primary;
+}
+
+textarea {
+  resize: none;
+}
+
+.material-symbols-outlined {
+  font-size: inherit;
+  color: inherit;
+  vertical-align: middle;
+}
+
+/* end of custom-reset */

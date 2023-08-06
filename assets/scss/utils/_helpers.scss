@@ -1,3 +1,66 @@
+/* 
+#NOTES:
+- 1296 + 24 = 1320px
+  - (696 + gutter = 720px)
+  - (348 + gutter = 372px)
+*/
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include pad {
+    max-width: 720px;
+  }
+
+  @include phone {
+    max-width: 372px;
+  }
+}
+
+
+.hover-effect-secondary {
+  &:before {
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    /* underline's height */
+    height: 3px;
+
+    background: $--color-secondary;
+    /* hidden */
+    transform: scaleX(0);
+  }
+
+  &:hover:before {
+    /* show */
+    transform: scaleX(1);
+  }
+}
+
+
+.main {
+  /* height: calc(100vh - 80px); */
+
+  @include pad {
+    padding-top: 160px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @include phone {
+    padding-top: 216px;
+
+    & h2 {
+      margin-bottom: 24px;
+      font-size: $--txt-base;
+    }
+  }
+}
+
+/* end of base */
 
 
 .size-6 {

@@ -1,12 +1,11 @@
 @import './utils/variables';
 @import './base/reset';
-@import './base/reset-custom';
 
 @import './utils/mixins';
 
-@import './themes/theme';
-@import './base/font';
 @import './base/base';
+@import './base/font';
+@import './themes/theme';
 
 @import './utils/helpers';
 @import './utils/functions';
