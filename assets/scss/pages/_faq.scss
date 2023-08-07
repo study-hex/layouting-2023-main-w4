@@ -1,5 +1,7 @@
-.faq-list-item>div {
-  @media (max-width:375px) {
-    margin-bottom: 24px;
+.faq-list {
+  width: calc(856 / 1296 * 100%);
+
+  @include pad {
+    width: 100%;
   }
 }
