@@ -10,6 +10,59 @@
 
 ---
 
+## RE-FIX-LV1
+
+- [x] 在 768px 時就先將導覽列變為手機版型，元素彼此才不會太擁擠
+  - （導覽列會在 510px 以下時出現 X 軸）
+
+> ![x](https://hackmd.io/_uploads/Skc0XX5s2.png)
+
+- [x] .main 不需要在 768 以下時移除左右邊的 padding，這會讓網頁內容太接近邊緣
+
+---
+
+## LV.2
+
+### SCSS
+
+```markdown
++---base
+|       _base.scss      <!-- global tags -->
+|       _font.scss
+|       _reset.scss
+|       
++---components
+|       _button.scss
+|       _scrollbar.scss
+|       
++---layout
+|       _footer.scss
+|       _header.scss
+|       _navbar.scss
+|       
++---pages
+|       _faq.scss
+|       _index.scss
+|       _store.scss
+|       
++---themes
+|       _theme.scss     <!-- color -->
+|       
+\---utils
+        _functions.scss <!-- margin, padding, gap -->
+        _helpers.scss   <!-- container, display -->
+        _mixins.scss    <!-- media -->
+        _variables.scss
+```
+
+### p3-首頁
+
+- 表單選項框框客製化
+
+> <https://codepen.io/NoNameNote/pen/qBQgOOb>
+
+---
+
 ## LV.1
 
 ```markdown
