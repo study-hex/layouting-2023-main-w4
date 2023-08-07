@@ -48,19 +48,19 @@
   }
 }
 
-.store-info {
-  @include pad {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 24px;
-  }
+// .store-info {
+//   @include pad {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//     gap: 24px;
+//   }
 
-  @include phone {
-    flex-direction: column;
-  }
-}
+//   @include phone {
+//     flex-direction: column;
+//   }
+// }
 
 .store-info>figure,
 .store-info-card {
@@ -77,14 +77,14 @@
   color: $--color-primary;
 }
 
-.main {
-  @include phone {
-    & .store {
-      margin-bottom: 24px;
-    }
+// .main {
+//   @include phone {
+//     & .store {
+//       margin-bottom: 24px;
+//     }
 
-    & p {
-      font-size: $--txt-2xs;
-    }
-  }
-}
+//     & p {
+//       font-size: $--txt-2xs;
+//     }
+//   }
+// }

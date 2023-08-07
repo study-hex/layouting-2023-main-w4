@@ -214,8 +214,20 @@
 /* end of utility-helpers */
 
 @include pad {
+  .md-flex {
+    display: flex;
+  }
+
   .md-flex-col {
     flex-direction: column;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .md-align-items {
+    align-items: center;
   }
 
   // QQ
@@ -229,6 +241,10 @@
 @include phone {
   .pt-sm-54 {
     padding-top: 216px;
+  }
+
+  .sm-flex-col {
+    flex-direction: column;
   }
 }
 
