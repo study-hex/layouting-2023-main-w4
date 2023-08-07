@@ -46,8 +46,9 @@
   @include pad {
     padding-top: 160px;
 
-    padding-left: 0px;
-    padding-right: 0px;
+    // #NOTE: no need to remove padding
+    // padding-left: 0px;
+    // padding-right: 0px;
   }
 
   @include phone {
@@ -221,3 +222,13 @@
     width: 100%;
   }
 }
+
+// end of pad
+
+@include phone {
+  .pt-sm-54 {
+    padding-top: 216px;
+  }
+}
+
+// end of phone
