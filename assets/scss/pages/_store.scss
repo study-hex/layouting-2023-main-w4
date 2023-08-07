@@ -5,8 +5,8 @@
 
 /* #REVIEW */
 .select-store-form {
-  /* width: 304px; */
-  /* width: 23%; */
+  // width: 304px;
+  // width: 23%;
   width: 23vw;
 
   /* Add custom arrow */
@@ -19,6 +19,8 @@
   }
 
   >select {
+    // QQ
+    // width: 304px;
     width: 23vw;
 
     padding-top: 6px;
@@ -48,21 +50,18 @@
   }
 }
 
-// .store-info {
-//   @include pad {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100%;
-//     gap: 24px;
-//   }
 
-//   @include phone {
-//     flex-direction: column;
-//   }
-// }
+.store-info-item {
+  width: 31%;
 
-.store-info>figure,
+  & .store-info-figure,
+  .store-info-card {
+    width: 100%;
+  }
+}
+
+.store-info-item,
+.store-info-figure,
 .store-info-card {
   @include pad {
     width: 48%;
@@ -77,14 +76,4 @@
   color: $--color-primary;
 }
 
-// .main {
-//   @include phone {
-//     & .store {
-//       margin-bottom: 24px;
-//     }
-
-//     & p {
-//       font-size: $--txt-2xs;
-//     }
-//   }
-// }
+// end of store, store-info
