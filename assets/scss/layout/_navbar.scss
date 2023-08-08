@@ -25,42 +25,26 @@
   @include phone {
     height: auto;
 
-    >.container {
-      padding: 0;
-    }
-  }
-}
-
-.nav-list {
-  @include pad {
-    gap: 48px;
-  }
-
-  @include phone {
-    width: 100%;
-    gap: 0px;
-
-    border-top: 1px solid $--color-white;
-    border-left: 1px solid $--color-white;
-    border-right: 1px solid $--color-white;
-  }
-}
-
-.nav-list-item {
-  @include phone {
-    width: 49.9%;
-
-    border-bottom: 1px solid $--color-white;
-
-    >a {
-      display: block;
-
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-
-    &:nth-child(odd) {
+    &-list {
+      border-top: 1px solid $--color-white;
+      border-left: 1px solid $--color-white;
       border-right: 1px solid $--color-white;
+
+      &-item {
+        width: 49.9%;
+
+        border-bottom: 1px solid $--color-white;
+
+        &:nth-child(odd) {
+          border-right: 1px solid $--color-white;
+        }
+      }
     }
+
+    // end of nav-list
   }
+
+  // end of nav-phone
 }
+
+// end of nav

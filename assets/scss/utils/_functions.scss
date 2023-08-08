@@ -79,5 +79,18 @@ $max: 20;
     .mr-sm-#{$i} {
       margin-right: $i * 4px;
     }
+
+    .p-sm-#{$i} {
+      padding: $i * 4px;
+    }
+
+    .py-sm-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+
+    .gap-sm-#{$i} {
+      gap: $i * 4px;
+    }
   }
 }

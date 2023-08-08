@@ -239,6 +239,19 @@
 // end of pad
 
 @include phone {
+  .sm-block {
+    display: block;
+  }
+
+  .sm-w-full {
+    width: 100%;
+  }
+
+  // QQ
+  .sm-h-auto {
+    height: auto;
+  }
+
   .pt-sm-54 {
     padding-top: 216px;
   }
@@ -246,6 +259,7 @@
   .sm-flex-col {
     flex-direction: column;
   }
+
 }
 
 // end of phone
