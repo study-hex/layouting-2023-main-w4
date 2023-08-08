@@ -6,8 +6,18 @@
   color: $--color-dark;
 }
 
+.text-blog {
+  color: $--color-blogText;
+}
+
+
 .text-black {
   color: $--color-black;
+}
+
+.text-black-light {
+  color: $--color-black;
+  opacity: 0.7;
 }
 
 .text-white {
@@ -54,4 +64,11 @@
 
 .border-left-primary {
   border-left: 8px solid $--color-primary;
+}
+
+
+@include pad {
+  .md-text-blog {
+    color: $--color-blogText;
+  }
 }

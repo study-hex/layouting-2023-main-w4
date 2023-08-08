@@ -18,6 +18,10 @@
   font-size: $--txt-lg;
 }
 
+.font-lg-mini {
+  font-size: $--txt-lg-mini;
+}
+
 .font-sm {
   font-size: $--txt-sm;
 }
@@ -30,11 +34,46 @@
   font-size: $--txt-2xs;
 }
 
+
 .font-bold {
   font-weight: bold;
 }
 
+.font-medium {
+  font-weight: medium;
+}
 
+
+
+@include pad {
+  .md-font-2xl {
+    font-size: $--txt-2xl;
+  }
+
+  .md-font-xl {
+    font-size: $--txt-xl;
+  }
+
+  .md-font-lg {
+    font-size: $--txt-lg;
+  }
+
+  .md-font-base {
+    font-size: $--txt-base;
+  }
+
+  .md-font-sm {
+    font-size: $--txt-sm;
+  }
+
+  .md-font-xs {
+    font-size: $--txt-xs;
+  }
+
+  .md-font-2xs {
+    font-size: $--txt-2xs;
+  }
+}
 
 @include phone {
   .phone-font-2xl {

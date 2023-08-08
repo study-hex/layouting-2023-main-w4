@@ -39,27 +39,26 @@
   }
 }
 
+// .main {
+/* height: calc(100vh - 80px); */
 
-.main {
-  /* height: calc(100vh - 80px); */
+// @include pad {
+//   padding-top: 160px;
 
-  @include pad {
-    padding-top: 160px;
+// #NOTE: no need to remove padding
+// padding-left: 0px;
+// padding-right: 0px;
+// }
 
-    // #NOTE: no need to remove padding
-    // padding-left: 0px;
-    // padding-right: 0px;
-  }
+// @include phone {
+//   padding-top: 216px;
 
-  @include phone {
-    padding-top: 216px;
-
-    & h2 {
-      margin-bottom: 24px;
-      font-size: $--txt-base;
-    }
-  }
-}
+//   & h2 {
+//     margin-bottom: 24px;
+//     font-size: $--txt-base;
+//   }
+// }
+// }
 
 /* end of base */
 
@@ -214,6 +213,10 @@
 /* end of utility-helpers */
 
 @include pad {
+  .md-inline {
+    display: inline;
+  }
+
   .md-flex {
     display: flex;
   }

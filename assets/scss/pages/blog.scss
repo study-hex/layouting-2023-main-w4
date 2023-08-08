@@ -1,0 +1,27 @@
+.blog-list-item {
+  &-figure img {
+    object-fit: cover;
+    // width: 636px;
+    // height: 400px;    
+  }
+
+  &-figure,
+  &-txt {
+    width: 49%;
+
+    @include phone {
+      width: 100%;
+    }
+  }
+
+
+  @include phone {
+
+    & h3,
+    p {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
