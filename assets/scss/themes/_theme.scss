@@ -14,6 +14,7 @@
   color: $--color-white;
 }
 
+
 .bg-white {
   background: $--color-white;
 }
@@ -26,9 +27,15 @@
   background: $--color-secondary;
 }
 
+
 .theme-primary {
   color: $--color-white;
   background: $--color-primary;
+}
+
+.theme-primary-dark {
+  color: $--color-white;
+  background: $--color-dark;
 }
 
 .theme-secondary {

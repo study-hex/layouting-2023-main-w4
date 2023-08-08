@@ -45,6 +45,11 @@
   }
 
   // end of nav-phone
+
+  &-blog {
+    height: 56px;
+    top: $--nav-height;
+  }
 }
 
 // end of nav

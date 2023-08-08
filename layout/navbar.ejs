@@ -28,4 +28,26 @@
   <!-- end of nav.container -->
 </nav>
 
-<!-- <%= page==='blog' ? '' : '' %> -->
+
+<nav
+  class="<%=page==='blog'
+? 'nav-blog relative w-full theme-primary-dark z-10 sm-none' : 'display-none' %>">
+  <div class="container flex justify-between align-center">
+    <ul class="nav-list flex gap-16 text-center font-sm">
+      <li class="nav-list-item">
+        <a class="py-3" href="#">最新消息</a>
+      </li>
+      <li class="nav-list-item">
+        <a class="py-3" href="#">特別企劃</a>
+      </li>
+      <li class="nav-list-item">
+        <a class="py-3" href="#">新品上市</a>
+      </li>
+      <li class="nav-list-item">
+        <a class="py-3" href="#">鏡框小知識</a>
+      </li>
+    </ul>
+    <!-- end of nav-list -->
+  </div>
+  <!-- end of nav.container -->
+</nav>
