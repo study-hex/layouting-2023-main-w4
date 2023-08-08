@@ -39,6 +39,14 @@
   }
 }
 
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
 // .main {
 /* height: calc(100vh - 80px); */
 
@@ -106,6 +114,10 @@
   padding-right: 220px;
 }
 
+.mb-31 {
+  margin-bottom: 124px;
+}
+
 
 .mt-auto {
   margin-top: auto;
@@ -170,6 +182,10 @@
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .align-center {

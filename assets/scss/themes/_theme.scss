@@ -37,6 +37,10 @@
   background: $--color-secondary;
 }
 
+.bg-page-gray {
+  background-color: $--color-pageGray;
+}
+
 
 .theme-primary {
   color: $--color-white;
@@ -53,6 +57,10 @@
   background: $--color-secondary;
 }
 
+
+.border-black {
+  border: 1px solid $--color-black;
+}
 
 .border-card {
   border: $--border-card;
