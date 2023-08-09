@@ -43,3 +43,11 @@
 // width: 40px;
 // height: 45px;
 // }
+
+.blog-article {
+  width: 66%;
+
+  @include phone {
+    width: 100%;
+  }
+}

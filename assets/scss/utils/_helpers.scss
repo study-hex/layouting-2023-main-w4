@@ -100,6 +100,14 @@
 }
 
 
+.pt-26 {
+  padding-top: 104px;
+}
+
+.pt-40 {
+  padding-top: 160px;
+}
+
 .pt-44 {
   padding-top: 176px;
 }
@@ -153,6 +161,10 @@
 
 .fixed {
   position: fixed;
+}
+
+.sticky {
+  position: sticky;
 }
 
 
@@ -253,6 +265,14 @@
   .md-w-full {
     width: 100%;
   }
+
+  .pt-md-22 {
+    padding-top: 88px;
+  }
+
+  .pt-md-36 {
+    padding-top: 144px;
+  }
 }
 
 // end of pad
@@ -279,8 +299,20 @@
     padding-top: 216px;
   }
 
+  .pt-sm-48 {
+    padding-top: 192px;
+  }
+
+  .pt-sm-70 {
+    padding-top: 280px;
+  }
+
   .sm-flex-col {
     flex-direction: column;
+  }
+
+  .sm-border-none {
+    border: none;
   }
 
 }
