@@ -50,6 +50,11 @@
     height: 56px;
     top: $--nav-height;
     z-index: 9;
+
+    @include phone {
+      height: 48px;
+      top: $phone-nav-height;
+    }
   }
 }
 
