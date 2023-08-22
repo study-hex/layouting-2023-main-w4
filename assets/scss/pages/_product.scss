@@ -1,0 +1,25 @@
+.product-list-item {
+  width: 23%;
+
+  @include pad {
+    width: 48%;
+  }
+
+  @include phone {
+    width: 100%;
+  }
+
+  // &-img {
+  // height: 168px;
+  // }
+}
+
+.color {
+  &-brown {
+    background-color: #5F3E2D;
+  }
+
+  &-orange {
+    background-color: #B75929;
+  }
+}
