@@ -18,36 +18,108 @@
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!-- end of CDN -->
     <title>Glasses</title>
-  <script type="module" crossorigin src="/layouting-2023-main-w4/assets/store-60470bd5.js"></script>
-  <link rel="stylesheet" href="/layouting-2023-main-w4/assets/store-a539490c.css">
+  <script type="module" crossorigin src="/layouting-2023-main-w4/assets/store-29f20909.js"></script>
+  <link rel="stylesheet" href="/layouting-2023-main-w4/assets/store-a02b5cfe.css">
 </head>
 
 <body>
   <header class="header h-screen">
     <nav class="nav fixed w-full theme-primary z-10">
-  <div class="container flex justify-between align-center">
+  <div class="container flex justify-between align-center p-sm-0">
     <a href="./index.html" class="py-4">
       <h1 class="h1-logo">Glasses</h1>
     </a>
 
-    <ul class="nav-list flex gap-16 text-center font-sm">
+    <ul
+      class="nav-list flex gap-16 text-center font-sm gap-md-12 sm-w-full gap-sm-0">
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="#">系列鏡框</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./product.html">系列鏡框</a>
       </li>
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="./store.html">門市據點</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./store.html">門市據點</a>
       </li>
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="#">部落格</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./blog.html">部落格</a>
       </li>
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="./faq.html">常見問題</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./faq.html">常見問題</a>
       </li>
     </ul>
     <!-- end of nav-list -->
   </div>
   <!-- end of nav.container -->
 </nav>
+
+
+<nav
+  class="display-none">
+  <div class="container flex justify-between align-center">
+    <ul class="flex gap-16 text-center font-sm gap-sm-6 phone-font-2xs">
+      <li class="list-item">
+        <a class="py-3" href="#">最新消息</a>
+      </li>
+      <li class="list-item">
+        <a class="py-3" href="#">特別企劃</a>
+      </li>
+      <li class="list-item">
+        <a class="py-3" href="#">新品上市</a>
+      </li>
+      <li class="list-item">
+        <a class="py-3" href="#">鏡框小知識</a>
+      </li>
+    </ul>
+    <!-- end of nav-list -->
+  </div>
+  <!-- end of nav.container -->
+</nav>
+
+<header class="display-none">
+  <nav class="nav-product relative w-full">
+    <div class="container flex justify-between align-center">
+      <ul
+        class="w-full flex justify-between align-center text-center font-medium font-lg md-font-base phone-font-2xs bg-white">
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">OPTICAL</a>
+        </li>
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">SUNGLASSES</a>
+        </li>
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">FUNCTIONAL</a>
+        </li>
+      </ul>
+      <!-- end of nav-list -->
+    </div>
+    <!-- end of nav.container -->
+  </nav>
+
+  <ul class="flex relative pt-26 pt-md-17 pt-sm-14 mb-20 mb-sm-10">
+    <li>
+      <picture>
+        <source
+          srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-1.png"
+          media="(max-width: 767px)" />
+        <img loading="lazy"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-1.png"
+          alt="product-img" class="w-half">
+      </picture>
+    </li>
+    <li>
+      <picture>
+        <source
+          srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-2.png"
+          media="(max-width: 767px)" />
+        <img loading="lazy"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-2.png"
+          alt="product-img" class="w-half">
+      </picture>
+    </li>
+  </ul>
+</header>
       <section class="hero relative bg-cover text-right text-dark font-noto">
         <div class="container">
           <p class="font-lg phone-font-2xs">Promise-Desert 2020 早春系列</p>

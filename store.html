@@ -17,41 +17,113 @@
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!-- end of CDN -->
-  <title>門市據點 | Glasses</title>
-  <script type="module" crossorigin src="/layouting-2023-main-w4/assets/store-60470bd5.js"></script>
-  <link rel="stylesheet" href="/layouting-2023-main-w4/assets/store-a539490c.css">
+    <title>門市據點 | Glasses</title>
+  <script type="module" crossorigin src="/layouting-2023-main-w4/assets/store-29f20909.js"></script>
+  <link rel="stylesheet" href="/layouting-2023-main-w4/assets/store-a02b5cfe.css">
 </head>
 
 <body>
   <nav class="nav fixed w-full theme-primary z-10">
-  <div class="container flex justify-between align-center">
+  <div class="container flex justify-between align-center p-sm-0">
     <a href="./index.html" class="py-4">
       <h1 class="h1-logo">Glasses</h1>
     </a>
 
-    <ul class="nav-list flex gap-16 text-center font-sm">
+    <ul
+      class="nav-list flex gap-16 text-center font-sm gap-md-12 sm-w-full gap-sm-0">
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="#">系列鏡框</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./product.html">系列鏡框</a>
       </li>
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="./store.html">門市據點</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./store.html">門市據點</a>
       </li>
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="#">部落格</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./blog.html">部落格</a>
       </li>
       <li class="nav-list-item">
-        <a class="py-3 hover-effect-secondary" href="./faq.html">常見問題</a>
+        <a class="py-3 hover-effect-secondary sm-block py-sm-3"
+          href="./faq.html">常見問題</a>
       </li>
     </ul>
     <!-- end of nav-list -->
   </div>
   <!-- end of nav.container -->
 </nav>
+
+
+<nav
+  class="display-none">
+  <div class="container flex justify-between align-center">
+    <ul class="flex gap-16 text-center font-sm gap-sm-6 phone-font-2xs">
+      <li class="list-item">
+        <a class="py-3" href="#">最新消息</a>
+      </li>
+      <li class="list-item">
+        <a class="py-3" href="#">特別企劃</a>
+      </li>
+      <li class="list-item">
+        <a class="py-3" href="#">新品上市</a>
+      </li>
+      <li class="list-item">
+        <a class="py-3" href="#">鏡框小知識</a>
+      </li>
+    </ul>
+    <!-- end of nav-list -->
+  </div>
+  <!-- end of nav.container -->
+</nav>
+
+<header class="display-none">
+  <nav class="nav-product relative w-full">
+    <div class="container flex justify-between align-center">
+      <ul
+        class="w-full flex justify-between align-center text-center font-medium font-lg md-font-base phone-font-2xs bg-white">
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">OPTICAL</a>
+        </li>
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">SUNGLASSES</a>
+        </li>
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">FUNCTIONAL</a>
+        </li>
+      </ul>
+      <!-- end of nav-list -->
+    </div>
+    <!-- end of nav.container -->
+  </nav>
+
+  <ul class="flex relative pt-26 pt-md-17 pt-sm-14 mb-20 mb-sm-10">
+    <li>
+      <picture>
+        <source
+          srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-1.png"
+          media="(max-width: 767px)" />
+        <img loading="lazy"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-1.png"
+          alt="product-img" class="w-half">
+      </picture>
+    </li>
+    <li>
+      <picture>
+        <source
+          srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-2.png"
+          media="(max-width: 767px)" />
+        <img loading="lazy"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-2.png"
+          alt="product-img" class="w-half">
+      </picture>
+    </li>
+  </ul>
+</header>
     <main class="main container pt-44 mb-20 pt-sm-54">
       <h2 class="mb-8 pl-4 font-xl border-left-primary">門市據點</h2>
 
-      <div class="store flex align-center gap-4 mb-10">
-        <p>選擇分店</p>
+      <div class="store flex align-center gap-4 mb-10 mb-sm-6">
+        <p class="phone-font-2xs">選擇分店</p>
 
         <form action="#" class="select-store-form font-xs">
           <select class="px-3 vertical-middle cursor-pointer">
@@ -61,66 +133,61 @@
               </option>
             </optgroup>
           </select>
-          <!-- <span class="material-symbols-outlined">
-            arrow_drop_down
-          </span> -->
         </form>
       </div>
 
-      <div class="flex justify-between align-center gap-6 flex-wrap">
-        <div class="store-info w-two-fifth">
-          <figure>
-            <!-- <figure class="inline-block h-56"> -->
-            <img loading="lazy" src="/layouting-2023-main-w4/assets/store-1-e8e7cac3.png" alt="台北中山旗艦店"
-              class="store-info-img">
-          </figure>
+      <ul class="store-info-list flex align-center gap-6 flex-wrap">
 
-          <section class="store-info-card">
-            <h3 class="px-6 py-2 border-card">台北中山旗艦店</h3>
+        <li class="store-info-item">
+          <div>
+            <figure class="store-info-figure">
+              <img loading="lazy" src="/layouting-2023-main-w4/assets/store-1-e8e7cac3.png"
+                alt="台北中山旗艦店" class="store-info-img">
+            </figure>
 
-            <ul class="px-6 py-4 font-sm border-card">
-              <li>
-                <p class="flex align-center gap-2">
-                  <span class="material-symbols-outlined">
-                    call
-                  </span>
-                  電話：<a href="tel:+88620001234" type="tel">
-                    (02)000-1234
-                  </a>
-                </p>
-              </li>
-              <li>
-                <p class="flex align-center gap-2">
-                  <span class="material-symbols-outlined">
-                    schedule
-                  </span>營業時間：10:00-21:00
-                </p>
-              </li>
-              <!-- QQ -->
-              <li>
-                <p class="flex align-center gap-2">
-                  <span class="material-symbols-outlined">
-                    location_on
-                  </span>地址：<a
-                    href="https://www.google.com.tw/maps/search/台北市中山區南京東路+25+巷+2-1+號/"
-                    target="_blank">
-                    台北市中山區南京東路 25 巷 2-1 號
-                  </a>
-                </p>
-              </li>
-            </ul>
-          </section>
-        </div>
+            <section class="store-info-card">
+              <h3 class="px-6 py-2 border-card">台北中山旗艦店</h3>
 
-        <map class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.476891713042!2d121.54022397460945!3d25.051820677804816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdde30008f1%3A0x319a7942664a3d3b!2z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6Lev5LiJ5q61!5e0!3m2!1szh-TW!2stw!4v1690513714824!5m2!1szh-TW!2stw"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="w-full h-full"></iframe>
-          <!-- width="746" height="414"  -->
-        </map>
-      </div>
+              <ul class="px-6 py-4 font-sm border-card">
+                <li>
+                  <p class="flex align-center gap-2">
+                    <span class="material-symbols-outlined">
+                      call
+                    </span>
+                    電話：<a href="tel:+88620001234" type="tel">
+                      (02)000-1234
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <p class="flex align-center gap-2">
+                    <span class="material-symbols-outlined">
+                      schedule
+                    </span>營業時間：10:00-21:00
+                  </p>
+                </li>
+                <li>
+                  <p class="flex align-center gap-2">
+                    <span class="material-symbols-outlined">
+                      location_on
+                    </span>地址：<a
+                      href="https://www.google.com.tw/maps/search/台北市中山區南京東路+25+巷+2-1+號/"
+                      target="_blank">
+                      台北市中山區南京東路 25 巷 2-1 號
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </section>
+
+            <a href="./store-info.html"
+              class="btn block py-4 text-center font-sm text-white bg-black">
+              詳細資訊
+            </a>
+          </div>
+        </li>
+
+      </ul>
     </main>
 
     <footer class="footer pt-12 theme-primary font-2xs">
