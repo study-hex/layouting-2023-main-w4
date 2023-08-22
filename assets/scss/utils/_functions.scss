@@ -64,6 +64,11 @@ $max: 20;
       margin-right: $i * 4px;
     }
 
+    .py-md-#{$i} {
+      padding-top: $i * 4px;
+      padding-bottom: $i * 4px;
+    }
+
     .gap-md-#{$i} {
       gap: $i * 4px;
     }

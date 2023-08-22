@@ -56,6 +56,33 @@
       top: $phone-nav-height;
     }
   }
+
+  &-product {
+    height: 80px;
+    top: $--nav-height;
+
+    @include pad {
+      height: 68px;
+    }
+
+    @include phone {
+      height: 56px;
+      // QQ
+      top: calc($phone-nav-height + 3px);
+    }
+
+    & .list-item {
+      // QQ
+      // width: calc(431 / 1296 * 100%);
+      width: 34%;
+      border: 1px solid $--color-border-gray;
+
+      & a:hover {
+        padding-bottom: 16px;
+        border-bottom: 8px solid $--color-primary;
+      }
+    }
+  }
 }
 
 // end of nav

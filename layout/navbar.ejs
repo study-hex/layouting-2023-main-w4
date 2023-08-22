@@ -8,7 +8,7 @@
       class="nav-list flex gap-16 text-center font-sm gap-md-12 sm-w-full gap-sm-0">
       <li class="nav-list-item">
         <a class="py-3 hover-effect-secondary sm-block py-sm-3"
-          href="#">系列鏡框</a>
+          href="./product.html">系列鏡框</a>
       </li>
       <li class="nav-list-item">
         <a class="py-3 hover-effect-secondary sm-block py-sm-3"
@@ -29,7 +29,8 @@
 </nav>
 
 
-<nav class="<%=page==='blog'
+<nav
+  class="<%=page==='blog'
 ? 'nav-blog relative sticky w-full theme-primary-dark z-10' : 'display-none' %>">
   <div class="container flex justify-between align-center">
     <ul class="flex gap-16 text-center font-sm gap-sm-6 phone-font-2xs">
@@ -44,6 +45,27 @@
       </li>
       <li class="list-item">
         <a class="py-3" href="#">鏡框小知識</a>
+      </li>
+    </ul>
+    <!-- end of nav-list -->
+  </div>
+  <!-- end of nav.container -->
+</nav>
+
+
+<nav class="<%=page==='product'
+? 'nav-product relative sticky w-full z-10' : 'display-none' %>">
+  <div class="container flex justify-between align-center">
+    <ul
+      class="w-full flex justify-between align-center text-center font-medium font-lg md-font-base phone-font-2xs bg-white">
+      <li class="list-item">
+        <a class="block py-6 py-md-4" href="#">OPTICAL</a>
+      </li>
+      <li class="list-item">
+        <a class="block py-6 py-md-4" href="#">SUNGLASSES</a>
+      </li>
+      <li class="list-item">
+        <a class="block py-6 py-md-4" href="#">FUNCTIONAL</a>
       </li>
     </ul>
     <!-- end of nav-list -->
