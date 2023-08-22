@@ -52,23 +52,47 @@
   <!-- end of nav.container -->
 </nav>
 
+<header class="<%=page==='product'
+? 'relative sticky w-full' : 'display-none' %>">
+  <nav class="nav-product relative w-full">
+    <div class="container flex justify-between align-center">
+      <ul
+        class="w-full flex justify-between align-center text-center font-medium font-lg md-font-base phone-font-2xs bg-white">
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">OPTICAL</a>
+        </li>
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">SUNGLASSES</a>
+        </li>
+        <li class="list-item">
+          <a class="block py-6 py-md-4" href="#">FUNCTIONAL</a>
+        </li>
+      </ul>
+      <!-- end of nav-list -->
+    </div>
+    <!-- end of nav.container -->
+  </nav>
 
-<nav class="<%=page==='product'
-? 'nav-product relative sticky w-full z-10' : 'display-none' %>">
-  <div class="container flex justify-between align-center">
-    <ul
-      class="w-full flex justify-between align-center text-center font-medium font-lg md-font-base phone-font-2xs bg-white">
-      <li class="list-item">
-        <a class="block py-6 py-md-4" href="#">OPTICAL</a>
-      </li>
-      <li class="list-item">
-        <a class="block py-6 py-md-4" href="#">SUNGLASSES</a>
-      </li>
-      <li class="list-item">
-        <a class="block py-6 py-md-4" href="#">FUNCTIONAL</a>
-      </li>
-    </ul>
-    <!-- end of nav-list -->
-  </div>
-  <!-- end of nav.container -->
-</nav>
+  <ul class="flex pt-26 pt-md-17 pt-sm-14 mb-20 mb-sm-10">
+    <li>
+      <picture>
+        <source
+          srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-1.png"
+          media="(max-width: 767px)" />
+        <img loading="lazy"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-1.png"
+          alt="product-img" class="w-half">
+      </picture>
+    </li>
+    <li>
+      <picture>
+        <source
+          srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-2.png"
+          media="(max-width: 767px)" />
+        <img loading="lazy"
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-2.png"
+          alt="product-img" class="w-half">
+      </picture>
+    </li>
+  </ul>
+</header>
